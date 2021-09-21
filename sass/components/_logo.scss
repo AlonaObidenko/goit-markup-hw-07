@@ -11,8 +11,8 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--secondary-text-color);
-  }
-  
-  .logo-accent {
-    color: var(--accent-color);
+
+    &-accent {
+      color: var(--accent-color);
+    }
   }

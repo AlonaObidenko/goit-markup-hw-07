@@ -1,15 +1,16 @@
-
 .preferences {
     display: flex;
   }
-  .preferences-item {
-    margin-right: 30px;
-  }
-  .preferences-item:last-child {
-    margin-right: 0;
-  }
   
-  .preferences-title {
+  .preferences__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .preferences__title {
     width: 270px;
     margin-bottom: 10px;
   
@@ -21,13 +22,13 @@
     color: var(--title-text-color);
   }
   
-  .preferences-text {
+  .preferences__text {
     width: 270px;
   
     color: var(--primary-text-color);
   }
   
-  .icon-preferences {
+  .preferences__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,7 @@
     background-color: #f5f4fa;
   }
   
-  .icon-picture {
+  .preferences__icon-picture {
     border-radius: 4px;
     justify-content: center;
   }

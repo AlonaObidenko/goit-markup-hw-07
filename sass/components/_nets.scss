@@ -1,12 +1,10 @@
-
-.icon-nets {
+  .icon-nets {
     display: flex;
     justify-content: center;
     margin-top: 16px;
   }
   
-  
-  .icon-nets-link {
+  .icon-nets__link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -19,10 +17,10 @@
     transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .icon-nets-link:hover,
-  .icon-nets-link:focus {
-    fill: var(--primary-white-color);
-    background-color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+      fill: var(--primary-white-color);
+      background-color: var(--accent-color);
+    }
   }

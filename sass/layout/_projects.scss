@@ -1,12 +1,11 @@
-
-  .projects {
+  .portfolio__projects {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-top: -30px;
   }
   
-  .projects-item {
+  .projects__item {
     display: flex;
     flex-basis: calc((100% - 90px) / 3);
     margin-right: 30px;
@@ -18,26 +17,27 @@
   
   }
   
-  .projects-link {
+  .projects__link {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .projects-link:hover,
-  .projects-link:focus {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    &:hover,
+    &:focus {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      }
     }
   
-  .projects-content {
+
+  .projects__content {
     padding: 20px 24px;
     border-left: 1px solid rgba(238, 238, 238, 1);
     border-right: 1px solid rgba(238, 238, 238, 1);
     border-bottom: 1px solid rgba(238, 238, 238, 1);
   }
   
-  .projects-title {
+  .content__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -46,7 +46,7 @@
     color: var(--title-text-color);
   }
   
-  .projects-text {
+  .content__text {
     margin-top: 4px;
     font-size: 16px;
     line-height: 1.87;
@@ -54,12 +54,12 @@
     color: var(--primary-text-color);
   }
   
-  .projects-thumb {
+  .projects__thumb {
     position: relative;
     overflow: hidden;
   }
   
-  .projects-description {
+  .projects__description {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,9 +72,10 @@
   
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--primary-white-color);
+
+    .projects__link:hover &,
+    .projects__link:focus & {
+      transform: translateY(0);
+    }
   }
   
-  .projects-link:hover .projects-description,
-  .projects-link:focus .projects-description {
-    transform: translateY(0);
-  }
