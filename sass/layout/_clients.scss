@@ -1,21 +1,10 @@
-  .clients__title {
-    margin-bottom: 50px;
-  
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-  
-    color: var(--title-text-color);
-  }
-  
-  .clients-list {
+  .clients {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .clients-list__item {
+  .clients__item {
     width: 170px;
     height: 92px;
     margin-right: 30px;
@@ -23,14 +12,9 @@
     &:last-child {
       margin-right: 0;
     }
-
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
   }
   
-  .clients-list__link {
+  .clients__link {
     display: flex;
     justify-content: center;
     align-items: center;

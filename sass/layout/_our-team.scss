@@ -1,23 +1,12 @@
-.our-team {
+.section--other-background {
   background-color: #f5f4fa;
 }
 
-.our-team__title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-
-  color: var(--title-text-color);
-}
-
-.our-team-list {
+.our-team {
   display: flex;
 }
 
-.our-team-list__member {
+.our-team__item {
   overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,14 +19,14 @@
   }
 }
 
-.our-team-list__content {
+.our-team__content {
   padding-top: 30px;
   padding-bottom: 30px;
 
   background-color: var(--primary-white-color);
 }
 
-.our-team-list__subtitle {
+.our-team__title {
   text-align: center;
   margin-bottom: 10px;
 
@@ -49,7 +38,7 @@
   color: var(--title-text-color);
 }
 
-.our-team-list__text {
+.our-team__text {
   text-align: center;
 
   font-size: 16px;
@@ -57,13 +46,4 @@
   text-align: center;
 
   color: var(--primary-text-color);
-}
-
-
-.icon-nets__item {
-  margin-right: 10px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }

@@ -10,7 +10,6 @@
   align-items: center;
 }
 
-
 .site-nav {
     display: flex;
     align-items: center;
@@ -44,7 +43,7 @@
     }
   }
 
-  .site-nav__current {
+  .site-nav__link--current {
     color: var(--accent-color);
     &::after {
       content: '';
@@ -97,7 +96,7 @@
     }
   }
   
-  .contacts__icon-link {
+  .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
   }

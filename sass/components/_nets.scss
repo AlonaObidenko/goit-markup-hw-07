@@ -1,4 +1,4 @@
-  .icon-nets {
+  .social {
     display: flex;
     justify-content: center;
     margin-top: 16px;
@@ -24,3 +24,13 @@
       background-color: var(--accent-color);
     }
   }
+
+  .social__item {
+    display: block;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
