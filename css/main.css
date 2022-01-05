@@ -5,6 +5,8 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --transition-effect: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
 }
 
 body {
@@ -65,10 +67,9 @@ a {
 .button {
   display: inline-block;
   padding: 6px 22px;
-  text-align: center;
   border: 1px solid transparent;
   border-radius: 4px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -77,8 +78,8 @@ a {
   color: var(--title-text-color);
   cursor: pointer;
   transition-property: color, background-color, box-shadow, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .button:hover, .button:focus {
@@ -91,7 +92,7 @@ a {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -126,11 +127,14 @@ a {
   right: 8px;
   top: 8px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__btn-close:hover, .modal__btn-close:focus {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-effect);
 }
 
 .btn-close__icon {
@@ -174,7 +178,7 @@ a {
   outline: transparent;
   fill: var(--accent-color);
   border-color: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-effect);
 }
 
 .modal-form-field__wrap {
@@ -194,7 +198,7 @@ a {
 .modal-form-field__input:hover + .modal-form-field__icon,
 .modal-form-field__input:focus + .modal-form-field__icon {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-effect);
 }
 
 .modal-form-field__comment {
@@ -210,7 +214,7 @@ a {
 
 .modal-form-field__comment:hover, .modal-form-field__comment:focus {
   border-color: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-effect);
 }
 
 .modal-form-field__comment::placeholder {
@@ -263,7 +267,7 @@ a {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-duration) var(--transition-effect), visibility var(--transition-duration) var(--transition-effect);
 }
 
 .backdrop.is-hidden {
@@ -287,8 +291,8 @@ a {
   border-radius: 50%;
   fill: #afb1b8;
   transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .icon-nets__link:hover, .icon-nets__link:focus {
@@ -351,8 +355,8 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
   color: var(--title-text-color);
 }
 
@@ -402,8 +406,8 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .contacts__link:hover, .contacts__link:focus {
@@ -433,7 +437,6 @@ a {
   margin-left: auto;
   margin-bottom: 30px;
   width: 696px;
-  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -450,7 +453,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
-  text-align: center;
   border: 1px solid transparent;
   font-weight: 700;
   font-size: 16px;
@@ -566,7 +568,6 @@ a {
 }
 
 .our-team__title {
-  text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -576,7 +577,6 @@ a {
 }
 
 .our-team__text {
-  text-align: center;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -609,8 +609,8 @@ a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .clients__link:hover, .clients__link:focus {
@@ -636,7 +636,7 @@ a {
   display: block;
   padding: 0;
   margin-bottom: 20px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -653,8 +653,8 @@ a {
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .adress-variants-list__item:first-child {
@@ -705,8 +705,8 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .social-nets-list__link:hover, .social-nets-list__link:focus {
@@ -749,6 +749,7 @@ a {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  color: var(--primary-white-color);
 }
 
 .mail::placeholder {
@@ -821,8 +822,8 @@ a {
 
 .projects__link {
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-effect);
 }
 
 .projects__link:hover, .projects__link:focus {
@@ -863,7 +864,7 @@ a {
   height: 100%;
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-duration) var(--transition-effect);
   font-size: 18px;
   line-height: 1.55;
   background-color: rgba(33, 150, 243, 0.9);
